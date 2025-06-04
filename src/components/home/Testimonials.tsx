@@ -15,7 +15,7 @@ const Testimonials = () => {
                 <Star key={star} className="w-5 h-5 text-sand-500 fill-current" />
               ))}
             </div>
-            <p className="text-gray-600 mb-4">"Amazing diving experience with professional guides!"</p>
+            <p className="text-gray-600 mb-4">&ldquo;Amazing diving experience with professional guides!&rdquo;</p>
             <div className="flex items-center">
               <div className="w-10 h-10 bg-gradient-to-r from-accent-400 to-primary-500 rounded-full mr-3"></div>
               <div>

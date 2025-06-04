@@ -7,7 +7,6 @@ import {
   Play, 
   Search, 
   MapPin, 
-  Calendar, 
   Users, 
   Award,
   ChevronDown,
@@ -19,7 +18,6 @@ import { motion } from 'framer-motion'
 const Hero = () => {
   const [searchQuery, setSearchQuery] = useState('')
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false)
 
   const heroSlides = [
     {
@@ -125,7 +123,7 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
             <button
-              onClick={() => setIsVideoPlaying(true)}
+              onClick={() => {/* Handle video play */}}
               className="flex items-center space-x-3 text-white hover:text-[#80defc] transition-colors group"
             >
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">

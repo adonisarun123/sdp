@@ -7,7 +7,7 @@ const CallToAction = () => {
       <div className="max-width container-padding text-center text-white">
         <h2 className="heading-lg mb-6">Ready to Start Your Diving Adventure?</h2>
         <p className="text-xl mb-8 max-w-2xl mx-auto">
-          Join thousands of divers exploring the world's most amazing underwater destinations
+          Join thousands of divers exploring the world&apos;s most amazing underwater destinations
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/destinations" className="btn-secondary text-lg px-8 py-4 group">

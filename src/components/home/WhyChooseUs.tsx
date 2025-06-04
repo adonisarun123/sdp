@@ -125,7 +125,7 @@ const WhyChooseUs = () => {
             Why <span className="gradient-text">Divers Choose</span> ScubaDiversPlanet
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Join the world's most trusted diving community and experience underwater adventures 
+            Join the world&apos;s most trusted diving community and experience underwater adventures 
             with unmatched safety, expertise, and environmental responsibility.
           </p>
         </motion.div>

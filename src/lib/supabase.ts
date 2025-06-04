@@ -8,6 +8,42 @@ export const createClient = () => {
   )
 }
 
+export type Json = string | number | boolean | null | { [key: string]: Json | undefined } | Json[]
+
+export interface Coordinates {
+  latitude: number
+  longitude: number
+}
+
+export interface VolunteerOpportunity {
+  title: string
+  description: string
+  duration: string
+  requirements: string[]
+}
+
+export interface Requirements {
+  certifications?: string[]
+  experience?: string
+  languages?: string[]
+  other?: string[]
+}
+
+export interface ContactInfo {
+  email?: string
+  phone?: string
+  website?: string
+  address?: string
+}
+
+export interface ImpactMetrics {
+  species_protected?: number
+  coral_restored?: number
+  waste_removed?: number
+  volunteers_trained?: number
+  research_papers?: number
+}
+
 export type Database = {
   public: {
     Tables: {
@@ -17,7 +53,7 @@ export type Database = {
           name: string
           code: string
           continent: string
-          diving_season: any
+          diving_season: Json
           currency: string | null
           created_at: string
           updated_at: string
@@ -27,14 +63,14 @@ export type Database = {
           name: string
           code: string
           continent: string
-          diving_season?: any
+          diving_season?: Json
           currency?: string | null
         }
         Update: {
           name?: string
           code?: string
           continent?: string
-          diving_season?: any
+          diving_season?: Json
           currency?: string | null
         }
       }
@@ -44,7 +80,7 @@ export type Database = {
           name: string
           country_id: string | null
           description: string | null
-          coordinates: any
+          coordinates: Coordinates | null
           difficulty_level: number | null
           max_depth: number | null
           visibility_range: number[] | null
@@ -62,7 +98,7 @@ export type Database = {
           name: string
           country_id?: string | null
           description?: string | null
-          coordinates?: any
+          coordinates?: Coordinates | null
           difficulty_level?: number | null
           max_depth?: number | null
           visibility_range?: number[] | null
@@ -137,7 +173,7 @@ export type Database = {
           species_id: string | null
           destination_id: string | null
           dive_site_name: string | null
-          coordinates: any
+          coordinates: Coordinates | null
           best_months: number[] | null
           peak_months: number[] | null
           encounter_probability: string | null
@@ -157,7 +193,7 @@ export type Database = {
           species_id?: string | null
           destination_id?: string | null
           dive_site_name?: string | null
-          coordinates?: any
+          coordinates?: Coordinates | null
           best_months?: number[] | null
           peak_months?: number[] | null
           encounter_probability?: string | null
@@ -175,7 +211,7 @@ export type Database = {
           species_id?: string | null
           destination_id?: string | null
           dive_site_name?: string | null
-          coordinates?: any
+          coordinates?: Coordinates | null
           best_months?: number[] | null
           peak_months?: number[] | null
           encounter_probability?: string | null
@@ -202,14 +238,14 @@ export type Database = {
           end_date: string | null
           description: string
           objectives: string[] | null
-          volunteer_opportunities: any
-          requirements: any
-          contact_info: any
+          volunteer_opportunities: VolunteerOpportunity[] | null
+          requirements: Requirements | null
+          contact_info: ContactInfo | null
           website_url: string | null
           funding_goal: number | null
           funding_current: number | null
           volunteer_count: number | null
-          impact_metrics: any
+          impact_metrics: ImpactMetrics | null
           photos: string[] | null
           videos: string[] | null
           created_at: string
@@ -225,14 +261,14 @@ export type Database = {
           end_date?: string | null
           description: string
           objectives?: string[] | null
-          volunteer_opportunities?: any
-          requirements?: any
-          contact_info?: any
+          volunteer_opportunities?: VolunteerOpportunity[] | null
+          requirements?: Requirements | null
+          contact_info?: ContactInfo | null
           website_url?: string | null
           funding_goal?: number | null
           funding_current?: number | null
           volunteer_count?: number | null
-          impact_metrics?: any
+          impact_metrics?: ImpactMetrics | null
           photos?: string[] | null
           videos?: string[] | null
         }
@@ -246,14 +282,14 @@ export type Database = {
           end_date?: string | null
           description?: string
           objectives?: string[] | null
-          volunteer_opportunities?: any
-          requirements?: any
-          contact_info?: any
+          volunteer_opportunities?: VolunteerOpportunity[] | null
+          requirements?: Requirements | null
+          contact_info?: ContactInfo | null
           website_url?: string | null
           funding_goal?: number | null
           funding_current?: number | null
           volunteer_count?: number | null
-          impact_metrics?: any
+          impact_metrics?: ImpactMetrics | null
           photos?: string[] | null
           videos?: string[] | null
         }
