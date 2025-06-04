@@ -139,7 +139,7 @@ const Header = () => {
                 placeholder="Search destinations, marine life..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors"
+                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:ring-2 focus:ring-[#1BA3C6] focus:border-[#1BA3C6] transition-colors"
               />
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
             </form>
@@ -150,7 +150,7 @@ const Header = () => {
             {user ? (
               <div className="relative group">
                 <button className="flex items-center space-x-2 p-2 rounded-lg hover:bg-gray-100 transition-colors">
-                  <div className="w-8 h-8 bg-gradient-to-r from-accent-500 to-primary-500 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-gradient-to-r from-[#1BA3C6] to-[#0B2F5C] rounded-full flex items-center justify-center">
                     <User className="w-4 h-4 text-white" />
                   </div>
                   <ChevronDown className="w-4 h-4 text-gray-600" />
@@ -195,7 +195,7 @@ const Header = () => {
               <div className="flex items-center space-x-2">
                 <Link
                   href="/login"
-                  className="flex items-center space-x-1 px-4 py-2 text-gray-700 hover:text-primary-500 transition-colors"
+                  className="flex items-center space-x-1 px-4 py-2 text-gray-700 hover:text-[#0B2F5C] transition-colors"
                 >
                   <LogIn className="w-4 h-4" />
                   <span className="hidden sm:inline">Sign In</span>
@@ -235,7 +235,7 @@ const Header = () => {
                   placeholder="Search destinations, marine life..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors"
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:ring-2 focus:ring-[#1BA3C6] focus:border-[#1BA3C6] transition-colors"
                 />
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
               </form>
@@ -247,7 +247,7 @@ const Header = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary-500 transition-colors"
+                  className="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#0B2F5C] transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <item.icon className="w-5 h-5" />

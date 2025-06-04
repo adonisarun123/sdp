@@ -108,7 +108,7 @@ const Hero = () => {
           <h1 className="heading-xl mb-6 font-serif">
             {heroSlides[currentSlide].title}
           </h1>
-          <h2 className="text-xl md:text-2xl lg:text-3xl text-accent-300 mb-4 font-medium">
+          <h2 className="text-xl md:text-2xl lg:text-3xl text-[#80defc] mb-4 font-medium">
             {heroSlides[currentSlide].subtitle}
           </h2>
           <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -126,7 +126,7 @@ const Hero = () => {
             </Link>
             <button
               onClick={() => setIsVideoPlaying(true)}
-              className="flex items-center space-x-3 text-white hover:text-accent-300 transition-colors group"
+              className="flex items-center space-x-3 text-white hover:text-[#80defc] transition-colors group"
             >
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
                 <Play className="w-5 h-5 ml-1" />
@@ -149,7 +149,7 @@ const Hero = () => {
                   />
                   <button
                     type="submit"
-                    className="bg-accent-500 hover:bg-accent-600 p-3 rounded-full transition-colors"
+                    className="bg-[#1BA3C6] hover:bg-[#1688a3] p-3 rounded-full transition-colors"
                   >
                     <Search className="w-5 h-5 text-white" />
                   </button>
@@ -169,7 +169,7 @@ const Hero = () => {
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 mb-3">
-                <stat.icon className="w-8 h-8 text-accent-300 mx-auto mb-3" />
+                <stat.icon className="w-8 h-8 text-[#80defc] mx-auto mb-3" />
                 <div className="text-2xl lg:text-3xl font-bold text-white mb-1">
                   {stat.value}
                 </div>
@@ -189,7 +189,7 @@ const Hero = () => {
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide ? 'bg-accent-400 w-8' : 'bg-white/50 hover:bg-white/70'
+              index === currentSlide ? 'bg-[#4dd0fb] w-8' : 'bg-white/50 hover:bg-white/70'
             }`}
           />
         ))}

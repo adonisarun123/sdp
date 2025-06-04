@@ -52,7 +52,7 @@ body {
 
 /* Custom focus styles */
 .focus-ring {
-  @apply focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2;
+  @apply focus:outline-none focus:ring-2 focus:ring-[#1BA3C6] focus:ring-offset-2;
 }
 
 /* Glass morphism effect */
@@ -72,40 +72,40 @@ body {
 
 /* Gradient text effects */
 .gradient-text {
-  @apply bg-gradient-to-r from-primary-500 to-accent-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-[#0B2F5C] to-[#1BA3C6] bg-clip-text text-transparent;
 }
 
 .gradient-text-coral {
-  @apply bg-gradient-to-r from-secondary-500 to-sand-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-[#FF6B35] to-[#F4D03F] bg-clip-text text-transparent;
 }
 
 .gradient-text-ocean {
-  @apply bg-gradient-to-r from-accent-500 to-primary-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-[#1BA3C6] to-[#0B2F5C] bg-clip-text text-transparent;
 }
 
 /* Button styles */
 .btn-primary {
-  @apply bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl focus-ring;
+  @apply bg-[#0B2F5C] hover:bg-[#082449] text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl focus-ring;
 }
 
 .btn-secondary {
-  @apply bg-secondary-500 hover:bg-secondary-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl focus-ring;
+  @apply bg-[#FF6B35] hover:bg-[#e5502a] text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl focus-ring;
 }
 
 .btn-accent {
-  @apply bg-accent-500 hover:bg-accent-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl focus-ring;
+  @apply bg-[#1BA3C6] hover:bg-[#1688a3] text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl focus-ring;
 }
 
 .btn-conservation {
-  @apply bg-conservation-500 hover:bg-conservation-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl focus-ring;
+  @apply bg-[#2ECC71] hover:bg-[#27ae60] text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl focus-ring;
 }
 
 .btn-outline {
-  @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 focus-ring;
+  @apply border-2 border-[#0B2F5C] text-[#0B2F5C] hover:bg-[#0B2F5C] hover:text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 focus-ring;
 }
 
 .btn-ghost {
-  @apply text-primary-500 hover:bg-primary-50 font-medium py-3 px-6 rounded-lg transition-all duration-200 focus-ring;
+  @apply text-[#0B2F5C] hover:bg-[#eff6ff] font-medium py-3 px-6 rounded-lg transition-all duration-200 focus-ring;
 }
 
 /* Card styles */
@@ -114,11 +114,11 @@ body {
 }
 
 .card-ocean {
-  @apply bg-gradient-to-br from-accent-50 to-primary-50 rounded-xl shadow-ocean hover:shadow-xl transition-all duration-300 border border-accent-100;
+  @apply bg-gradient-to-br from-[#f0fbff] to-[#eff6ff] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-[#b3ebfd];
 }
 
 .card-coral {
-  @apply bg-gradient-to-br from-secondary-50 to-sand-50 rounded-xl shadow-coral hover:shadow-xl transition-all duration-300 border border-secondary-100;
+  @apply bg-gradient-to-br from-[#fff2ed] to-[#fefce8] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-[#ffc5a8];
 }
 
 /* Animation utilities */
@@ -201,7 +201,7 @@ body {
 
 /* Navigation styles */
 .nav-link {
-  @apply text-gray-700 hover:text-primary-500 font-medium transition-colors duration-200 relative;
+  @apply text-gray-700 hover:text-[#0B2F5C] font-medium transition-colors duration-200 relative;
 }
 
 .nav-link::after {
@@ -223,15 +223,15 @@ body {
 
 /* Form styles */
 .form-input {
-  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors duration-200;
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1BA3C6] focus:border-[#1BA3C6] transition-colors duration-200;
 }
 
 .form-textarea {
-  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors duration-200 resize-none;
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1BA3C6] focus:border-[#1BA3C6] transition-colors duration-200 resize-none;
 }
 
 .form-select {
-  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors duration-200 bg-white;
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1BA3C6] focus:border-[#1BA3C6] transition-colors duration-200 bg-white;
 }
 
 /* Utility classes */
