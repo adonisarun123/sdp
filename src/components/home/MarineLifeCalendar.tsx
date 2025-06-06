@@ -341,7 +341,7 @@ const MarineLifeCalendar = () => {
           </h3>
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
             Our marine life calendar is based on decades of diving experience and scientific research. 
-            Each destination offers unique seasonal patterns, ensuring you witness nature's most spectacular underwater shows.
+            Each destination offers unique seasonal patterns, ensuring you witness nature&apos;s most spectacular underwater shows.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center">

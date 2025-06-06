@@ -334,7 +334,7 @@ export default function ConservationPage() {
               How You Can Help
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Choose how you'd like to contribute to marine conservation efforts
+              Choose how you&apos;d like to contribute to marine conservation efforts
             </p>
           </motion.div>
 

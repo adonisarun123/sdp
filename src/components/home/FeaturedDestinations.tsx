@@ -131,7 +131,7 @@ const FeaturedDestinations = () => {
           Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-primary-600">Destinations</span>
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-          Explore the world's most spectacular diving locations, each offering unique underwater adventures 
+          Explore the world&apos;s most spectacular diving locations, each offering unique underwater adventures 
           and unforgettable marine encounters.
         </p>
       </motion.div>

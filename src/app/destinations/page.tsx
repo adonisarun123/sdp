@@ -166,7 +166,7 @@ export default function DestinationsPage() {
             className="text-center"
           >
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              World's Best <span className="text-accent-200">Diving Destinations</span>
+              World&apos;s Best <span className="text-accent-200">Diving Destinations</span>
             </h1>
             <p className="text-xl lg:text-2xl text-primary-100 mb-8 max-w-3xl mx-auto">
               Discover underwater paradises across the globe, from coral gardens to mysterious wrecks

@@ -99,7 +99,7 @@ const ConservationHighlight = () => {
               </h3>
               <p className="text-xl text-conservation-100 mb-8 leading-relaxed">
                 Join our global community of eco-conscious divers in protecting marine ecosystems. 
-                Through responsible diving practices and active conservation efforts, we're creating 
+                Through responsible diving practices and active conservation efforts, we&apos;re creating 
                 a sustainable future for our oceans.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -149,7 +149,7 @@ const ConservationHighlight = () => {
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Conservation Initiatives</h3>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover the specific ways we're working to protect and restore marine ecosystems worldwide.
+            Discover the specific ways we&apos;re working to protect and restore marine ecosystems worldwide.
           </p>
         </div>
 

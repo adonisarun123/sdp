@@ -104,7 +104,7 @@ const PartnerCertifications = () => {
           Trusted <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-primary-600">Certifications</span>
         </h3>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Recognized and certified by the world's leading diving organizations, 
+          Recognized and certified by the world&apos;s leading diving organizations, 
           ensuring the highest standards of safety, education, and professionalism.
         </p>
       </motion.div>
