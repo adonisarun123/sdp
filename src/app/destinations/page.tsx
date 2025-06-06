@@ -8,13 +8,9 @@ import {
   Star, 
   ThermometerSun, 
   Eye, 
-  Fish, 
   Waves, 
-  Calendar,
   Users,
-  Shield,
   Camera,
-  Filter,
   Search
 } from 'lucide-react'
 
@@ -33,7 +29,7 @@ export default function DestinationsPage() {
       visibility: '15-30m',
       bestMonths: ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
       highlights: ['Coral Gardens', 'Marine Park', 'Tropical Fish', 'Turtles'],
-      description: 'Explore the world\'s largest coral reef system with incredible marine biodiversity.',
+      description: 'Explore the world&apos;s largest coral reef system with incredible marine biodiversity.',
       diveInfo: {
         maxDepth: '30m',
         experience: 'All levels',
@@ -54,7 +50,7 @@ export default function DestinationsPage() {
       visibility: '30-60m',
       bestMonths: ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
       highlights: ['Stalactites', 'Reef Sharks', 'Deep Dive', 'Ancient Formations'],
-      description: 'Dive into one of the world\'s most famous blue holes with ancient formations.',
+      description: 'Dive into one of the world&apos;s most famous blue holes with ancient formations.',
       diveInfo: {
         maxDepth: '130m',
         experience: 'Advanced',

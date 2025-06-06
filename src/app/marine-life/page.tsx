@@ -5,14 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { 
   Fish, 
-  Camera, 
-  MapPin, 
-  Calendar,
-  Eye,
   Shield,
-  Heart,
   Search,
-  Filter,
   ArrowRight
 } from 'lucide-react'
 
@@ -44,7 +38,7 @@ export default function MarineLifePage() {
       bestSeen: ['Philippines', 'Australia', 'Thailand', 'Maldives'],
       months: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
       conservationStatus: 'Endangered',
-      description: 'The world\'s largest fish species, gentle giants that feed on plankton.',
+      description: 'The world&apos;s largest fish species, gentle giants that feed on plankton.',
       rarity: 'Rare',
       category: 'Sharks'
     },

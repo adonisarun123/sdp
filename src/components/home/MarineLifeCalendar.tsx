@@ -262,7 +262,7 @@ const MarineLifeCalendar = () => {
         viewport={{ once: true }}
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12"
       >
-        {marineLifeData.map((month, index) => (
+        {marineLifeData.map((month) => (
           <motion.div
             key={month.month}
             variants={cardVariants}

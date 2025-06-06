@@ -5,18 +5,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { 
   Heart, 
-  Waves, 
   Fish, 
-  Leaf, 
   Users, 
   Target, 
   Globe,
-  TreePine,
-  Recycle,
   Shield,
   Camera,
   ArrowRight,
-  Calendar,
   MapPin
 } from 'lucide-react'
 

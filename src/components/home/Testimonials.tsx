@@ -50,7 +50,7 @@ const Testimonials = () => {
       rating: 5,
       date: '5 days ago',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face',
-      testimonial: 'First time diving and I couldn\'t have asked for a better introduction! The instructors were patient, encouraging, and made sure I felt completely comfortable before each dive. Great Barrier Reef was magical!',
+      testimonial: 'First time diving and I couldn&apos;t have asked for a better introduction! The instructors were patient, encouraging, and made sure I felt completely comfortable before each dive. Great Barrier Reef was magical!',
       diveLocation: 'Great Barrier Reef',
       highlight: 'First-Time Experience'
     },
@@ -74,7 +74,7 @@ const Testimonials = () => {
       rating: 5,
       date: '2 months ago',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face',
-      testimonial: 'Palau\'s Jellyfish Lake was a once-in-a-lifetime experience! Swimming among millions of harmless jellyfish felt like floating in an alien world. The entire trip was perfectly organized and unforgettable.',
+      testimonial: 'Palau&apos;s Jellyfish Lake was a once-in-a-lifetime experience! Swimming among millions of harmless jellyfish felt like floating in an alien world. The entire trip was perfectly organized and unforgettable.',
       diveLocation: 'Palau, Micronesia',
       highlight: 'Jellyfish Lake'
     }
@@ -195,7 +195,7 @@ const Testimonials = () => {
 
               {/* Testimonial Text */}
               <blockquote className="text-gray-600 leading-relaxed mb-6 text-sm">
-                "{testimonial.testimonial}"
+                &ldquo;{testimonial.testimonial}&rdquo;
               </blockquote>
 
               {/* Footer */}

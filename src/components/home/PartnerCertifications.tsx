@@ -8,7 +8,7 @@ const PartnerCertifications = () => {
     {
       name: 'PADI',
       fullName: 'Professional Association of Diving Instructors',
-      description: 'World\'s leading scuba training organization',
+      description: 'World&apos;s leading scuba training organization',
       icon: Award,
       logo: '🏆',
       color: 'from-blue-500 to-blue-600',
@@ -44,7 +44,7 @@ const PartnerCertifications = () => {
     {
       name: 'BSAC',
       fullName: 'British Sub-Aqua Club',
-      description: 'UK\'s national diving organization',
+      description: 'UK&apos;s national diving organization',
       icon: CheckCircle,
       logo: '🇬🇧',
       color: 'from-red-500 to-red-600',

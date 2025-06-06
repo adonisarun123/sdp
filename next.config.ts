@@ -32,11 +32,6 @@ const nextConfig: NextConfig = {
       },
     ]
   },
-  turbopack: {
-    rules: {
-      '*.css': ['css-loader', 'postcss-loader'],
-    },
-  },
 }
 
 export default nextConfig

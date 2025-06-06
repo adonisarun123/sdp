@@ -18,7 +18,7 @@ const FeaturedDestinations = () => {
       price: 'From $189',
       difficulty: 'Beginner',
       temperature: '24-28°C',
-      description: 'Explore the world\'s largest coral reef system with incredible marine biodiversity.'
+      description: 'Explore the world&apos;s largest coral reef system with incredible marine biodiversity.'
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const FeaturedDestinations = () => {
       price: 'From $299',
       difficulty: 'Advanced',
       temperature: '26-29°C',
-      description: 'Dive into one of the world\'s most famous blue holes with ancient formations.'
+      description: 'Dive into one of the world&apos;s most famous blue holes with ancient formations.'
     },
     {
       id: 3,
