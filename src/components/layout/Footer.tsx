@@ -81,13 +81,13 @@ const Footer = () => {
   return (
     <footer className="bg-primary-900 text-white">
       {/* Newsletter Section */}
-      <div className="bg-gradient-to-r from-accent-600 to-primary-600 py-12">
+      <div className="bg-gradient-to-r from-conservation-600 to-conservation-500 py-12">
         <div className="max-width container-padding">
           <div className="text-center max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">
               Dive into Our Newsletter
             </h3>
-            <p className="text-accent-100 mb-6">
+            <p className="text-conservation-100 mb-6">
               Get the latest diving destinations, marine life encounters, and exclusive offers delivered to your inbox.
             </p>
             <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -102,7 +102,7 @@ const Footer = () => {
               <button
                 type="submit"
                 disabled={isSubscribing}
-                className="bg-white text-accent-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors disabled:opacity-50 flex items-center justify-center space-x-2"
+                className="bg-white text-conservation-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors disabled:opacity-50 flex items-center justify-center space-x-2"
               >
                 {isSubscribing ? (
                   <div className="spinner w-4 h-4" />

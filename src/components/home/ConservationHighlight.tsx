@@ -49,7 +49,7 @@ const ConservationHighlight = () => {
     {
       title: 'Species Protection',
       description: 'Monitor and protect endangered marine species habitats',
-      image: 'https://images.unsplash.com/photo-1583212292506-2dace2e7e279?w=400&h=300&fit=crop',
+      image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop',
       impact: '150+ species protected'
     }
   ]

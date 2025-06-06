@@ -13,7 +13,7 @@ const Testimonials = () => {
       certification: 'PADI Advanced Open Water',
       rating: 5,
       date: '2 weeks ago',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face',
+      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face',
       testimonial: 'Absolutely incredible experience diving in the Maldives! The team was professional, the equipment was top-notch, and seeing manta rays up close was a dream come true. ScubaDiversPlanet made everything seamless.',
       diveLocation: 'Maldives',
       highlight: 'Manta Ray Encounter'

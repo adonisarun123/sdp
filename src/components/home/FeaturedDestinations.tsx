@@ -24,7 +24,7 @@ const FeaturedDestinations = () => {
       id: 2,
       name: 'Blue Hole',
       location: 'Belize',
-      image: 'https://images.unsplash.com/photo-1583212292506-2dace2e7e279?w=800&h=600&fit=crop',
+      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
       rating: 4.8,
       reviews: 1923,
       highlights: ['Stalactites', 'Sharks', 'Deep Dive'],
@@ -76,14 +76,14 @@ const FeaturedDestinations = () => {
       id: 6,
       name: 'Palau',
       location: 'Micronesia',
-      image: 'https://images.unsplash.com/photo-1571749712193-8cc90bcce8b6?w=800&h=600&fit=crop',
+      image: 'https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=800&h=600&fit=crop',
       rating: 4.8,
       reviews: 987,
       highlights: ['Jellyfish Lake', 'WWII Wrecks', 'Drop-offs'],
       price: 'From $399',
       difficulty: 'All Levels',
       temperature: '28-30°C',
-      description: 'Swim with harmless jellyfish and explore pristine Pacific waters.'
+      description: 'Swimming with harmless jellyfish and explore pristine Pacific waters.'
     }
   ]
 
