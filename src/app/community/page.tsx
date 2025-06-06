@@ -15,11 +15,9 @@ import {
   Eye,
   ThumbsUp,
   Share2,
-  BookOpen,
   Star,
   Globe,
   Fish,
-  Waves
 } from 'lucide-react'
 
 export default function CommunityPage() {

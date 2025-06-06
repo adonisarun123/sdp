@@ -9,18 +9,10 @@ import {
   Clock, 
   Users, 
   Fish, 
-  Camera, 
-  Waves,
   Sun,
-  Moon,
-  CloudRain,
   Thermometer,
   Eye,
   Heart,
-  Star,
-  ChevronLeft,
-  ChevronRight,
-  Plus,
   Filter
 } from 'lucide-react'
 import { useState } from 'react'

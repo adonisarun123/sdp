@@ -7,7 +7,6 @@ import {
   Search, 
   Menu, 
   X, 
-  User, 
   LogIn,
   UserPlus,
   Waves
