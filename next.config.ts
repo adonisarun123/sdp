@@ -1,13 +1,15 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
   images: {
-    domains: [
-      'images.unsplash.com',
-      'res.cloudinary.com',
-      'flagcdn.com',
-      'via.placeholder.com',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
-    formats: ['image/avif', 'image/webp'],
   },
   async headers() {
     return [
@@ -29,6 +31,11 @@ const nextConfig = {
         ],
       },
     ]
+  },
+  turbopack: {
+    rules: {
+      '*.css': ['css-loader', 'postcss-loader'],
+    },
   },
 }
 

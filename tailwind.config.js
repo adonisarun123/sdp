@@ -8,14 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // ScubaDiversPlanet Brand Colors
         primary: {
           50: '#eff6ff',
           100: '#dbeafe',
           200: '#bfdbfe',
           300: '#93c5fd',
           400: '#60a5fa',
-          500: '#0B2F5C',  // Deep Ocean Blue
+          500: '#0B2F5C',
           600: '#082449',
           700: '#051a37',
           800: '#041528',
@@ -26,7 +25,7 @@ module.exports = {
           100: '#ffe4d4',
           200: '#ffc5a8',
           300: '#ff9d71',
-          400: '#ff6b35',  // Coral Reef Orange
+          400: '#ff6b35',
           500: '#FF6B35',
           600: '#e5502a',
           700: '#cc3f1f',
@@ -39,7 +38,7 @@ module.exports = {
           200: '#b3ebfd',
           300: '#80defc',
           400: '#4dd0fb',
-          500: '#1BA3C6',  // Aqua Turquoise
+          500: '#1BA3C6',
           600: '#1688a3',
           700: '#126d80',
           800: '#0f525d',
@@ -51,7 +50,7 @@ module.exports = {
           200: '#a7f3d0',
           300: '#6ee7b7',
           400: '#34d399',
-          500: '#2ECC71',  // Seafoam Green
+          500: '#2ECC71',
           600: '#27ae60',
           700: '#1e8b4f',
           800: '#166534',
@@ -63,14 +62,14 @@ module.exports = {
           200: '#fef08a',
           300: '#fde047',
           400: '#facc15',
-          500: '#F4D03F',  // Golden Sand
+          500: '#F4D03F',
           600: '#f1c40f',
           700: '#ca8a04',
           800: '#a16207',
           900: '#854d0e',
         },
         ocean: {
-          50: '#f8fafb',   // Ocean Mist
+          50: '#f8fafb',
           100: '#f1f5f9',
           200: '#e2e8f0',
           300: '#cbd5e1',
@@ -79,13 +78,18 @@ module.exports = {
           600: '#475569',
           700: '#334155',
           800: '#1e293b',
-          900: '#0f172a',  // Midnight Depth
+          900: '#0f172a',
         },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         serif: ['Merriweather', 'Georgia', 'serif'],
         accent: ['Roboto Slab', 'serif'],
+      },
+      spacing: {
+        '18': '4.5rem',
+        '88': '22rem',
+        '128': '32rem',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
@@ -102,48 +106,27 @@ module.exports = {
           '100%': { opacity: '1' },
         },
         slideUp: {
-          '0%': { transform: 'translateY(10px)', opacity: '0' },
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
         slideDown: {
-          '0%': { transform: 'translateY(-10px)', opacity: '0' },
+          '0%': { transform: 'translateY(-20px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
         bounceGentle: {
           '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-5px)' },
+          '50%': { transform: 'translateY(-10px)' },
         },
         wave: {
           '0%, 100%': { transform: 'rotate(0deg)' },
-          '25%': { transform: 'rotate(3deg)' },
-          '75%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
         },
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-20px)' },
         },
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'ocean-waves': 'linear-gradient(135deg, #1BA3C6 0%, #0B2F5C 100%)',
-        'coral-reef': 'linear-gradient(135deg, #FF6B35 0%, #F4D03F 100%)',
-        'deep-sea': 'linear-gradient(180deg, #0B2F5C 0%, #051a37 100%)',
-      },
-      boxShadow: {
-        'ocean': '0 10px 40px -12px rgba(27, 163, 198, 0.3)',
-        'coral': '0 10px 40px -12px rgba(255, 107, 53, 0.3)',
-        'deep': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
-      },
-      spacing: {
-        '18': '4.5rem',
-        '88': '22rem',
-        '128': '32rem',
-      },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [],
 } 
