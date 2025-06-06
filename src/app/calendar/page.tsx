@@ -13,18 +13,11 @@ import {
   Thermometer,
   Eye,
   Heart,
-  Filter
 } from 'lucide-react'
 import { useState } from 'react'
 
 export default function CalendarPage() {
-  const [currentMonth, setCurrentMonth] = useState(new Date())
   const [selectedFilter, setSelectedFilter] = useState('all')
-
-  const months = [
-    'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December'
-  ]
 
   const diveEvents = [
     {
