@@ -11,10 +11,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  swcMinify: true, // Use SWC for faster modern minification
   experimental: {
     optimizeCss: true, // Enable CSS optimization
-    legacyBrowsers: false, // Disable legacy browser polyfills
   },
   // Inline critical CSS
   compiler: {
