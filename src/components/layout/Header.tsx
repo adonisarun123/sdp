@@ -9,8 +9,7 @@ import {
   X, 
   LogIn,
   UserPlus,
-  Waves,
-  ChevronDown
+  Waves
 } from 'lucide-react'
 
 const Header = () => {
