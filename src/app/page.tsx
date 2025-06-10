@@ -1,11 +1,31 @@
+import dynamic from 'next/dynamic'
 import Hero from '@/components/home/Hero'
-import FeaturedDestinations from '@/components/home/FeaturedDestinations'
-import ConservationHighlight from '@/components/home/ConservationHighlight'
-import MarineLifeCalendar from '@/components/home/MarineLifeCalendar'
 import WhyChooseUs from '@/components/home/WhyChooseUs'
-import Testimonials from '@/components/home/Testimonials'
-import PartnerCertifications from '@/components/home/PartnerCertifications'
-import CallToAction from '@/components/home/CallToAction'
+
+// Lazy load below-the-fold components for better Speed Index
+const FeaturedDestinations = dynamic(() => import('@/components/home/FeaturedDestinations'), {
+  loading: () => <div className="h-96 bg-gray-50 animate-pulse rounded-lg" />
+})
+
+const ConservationHighlight = dynamic(() => import('@/components/home/ConservationHighlight'), {
+  loading: () => <div className="h-96 bg-green-50 animate-pulse rounded-lg" />
+})
+
+const MarineLifeCalendar = dynamic(() => import('@/components/home/MarineLifeCalendar'), {
+  loading: () => <div className="h-96 bg-white animate-pulse rounded-lg" />
+})
+
+const Testimonials = dynamic(() => import('@/components/home/Testimonials'), {
+  loading: () => <div className="h-96 bg-blue-50 animate-pulse rounded-lg" />
+})
+
+const PartnerCertifications = dynamic(() => import('@/components/home/PartnerCertifications'), {
+  loading: () => <div className="h-48 bg-white animate-pulse rounded-lg" />
+})
+
+const CallToAction = dynamic(() => import('@/components/home/CallToAction'), {
+  loading: () => <div className="h-64 bg-blue-600 animate-pulse rounded-lg" />
+})
 
 export const metadata = {
   title: 'ScubaDiversPlanet | Dive Into Adventure - PADI Courses & Marine Conservation',
@@ -16,38 +36,31 @@ export const metadata = {
 export default function HomePage() {
   return (
     <div className="pt-16 lg:pt-20">
-      {/* Hero Section */}
+      {/* Critical above-the-fold content - Load immediately */}
       <Hero />
-      
-      {/* Features Section */}
       <WhyChooseUs />
       
-      {/* Featured Destinations */}
+      {/* Lazy-loaded below-the-fold content - Improve Speed Index */}
       <section className="section-padding bg-gray-50">
         <FeaturedDestinations />
       </section>
       
-      {/* Conservation Highlight */}
-      <section className="section-padding bg-conservation-50">
+      <section className="section-padding bg-green-50">
         <ConservationHighlight />
       </section>
       
-      {/* Marine Life Calendar */}
       <section className="section-padding">
         <MarineLifeCalendar />
       </section>
       
-      {/* Testimonials */}
-      <section className="section-padding bg-primary-50">
+      <section className="section-padding bg-blue-50">
         <Testimonials />
       </section>
       
-      {/* Partner Certifications */}
       <section className="py-12 bg-white">
         <PartnerCertifications />
       </section>
       
-      {/* Call to Action */}
       <CallToAction />
     </div>
   )
