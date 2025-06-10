@@ -9,6 +9,8 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
+  preload: true,
+  fallback: ["system-ui", "sans-serif"],
 });
 
 const merriweather = Merriweather({
@@ -16,6 +18,8 @@ const merriweather = Merriweather({
   subsets: ["latin"],
   variable: "--font-merriweather",
   display: "swap",
+  preload: true,
+  fallback: ["Georgia", "serif"],
 });
 
 const robotoSlab = Roboto_Slab({
@@ -23,6 +27,8 @@ const robotoSlab = Roboto_Slab({
   subsets: ["latin"],
   variable: "--font-roboto-slab",
   display: "swap",
+  preload: true,
+  fallback: ["Georgia", "serif"],
 });
 
 export const metadata: Metadata = {
@@ -87,6 +93,73 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${merriweather.variable} ${robotoSlab.variable}`}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        {/* Inline critical CSS */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              /* Critical CSS only needed for initial render */
+              :root {
+                --foreground-rgb: 0, 0, 0;
+                --background-start-rgb: 214, 219, 220;
+                --background-end-rgb: 255, 255, 255;
+              }
+              
+              body {
+                color: rgb(var(--foreground-rgb));
+                background: linear-gradient(
+                    to bottom,
+                    transparent,
+                    rgb(var(--background-end-rgb))
+                  )
+                  rgb(var(--background-start-rgb));
+                margin: 0;
+                padding: 0;
+              }
+              
+              html {
+                scroll-behavior: smooth;
+              }
+              
+              /* Essential styles for layout */
+              .min-h-screen {
+                min-height: 100vh;
+              }
+              
+              .flex {
+                display: flex;
+              }
+              
+              .flex-col {
+                flex-direction: column;
+              }
+              
+              .flex-1 {
+                flex: 1 1 0%;
+              }
+              
+              .font-sans {
+                font-family: var(--font-inter), system-ui, sans-serif;
+              }
+              
+              .antialiased {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+              }
+              
+              .bg-white {
+                background-color: #ffffff;
+              }
+              
+              .text-gray-900 {
+                color: #111827;
+              }
+            `,
+          }}
+        />
+      </head>
       <body className="font-sans antialiased bg-white text-gray-900 min-h-screen">
         <AuthProvider>
           <div className="min-h-screen flex flex-col">
